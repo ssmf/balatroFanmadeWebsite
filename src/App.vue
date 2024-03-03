@@ -7,6 +7,7 @@
 
 <template>
   <div class="backgroundImage"></div>
+  <div class="crtFlickerOverlay crt"></div>
   <div class="main">
     <img src="./assets/images/mainLogo.png" class="mainLogo">
     <h1 class="availableHeader">AVAILABLE NOW!</h1>
@@ -43,6 +44,14 @@
         height: 100%;
         position: fixed;
         z-index: -1;
+    }
+
+    .crtFlickerOverlay {
+        pointer-events: none;
+        position: fixed;
+        width: 110%;
+        height: 100%;
+        z-index: 5;
     }
 
     .main {
