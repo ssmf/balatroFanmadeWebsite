@@ -1,5 +1,4 @@
 <script setup>
-    import { ref } from 'vue';
     
     const props = defineProps({
         buttonContent: String,
@@ -34,7 +33,7 @@
         position: inherit;
         top: 0px;
         padding: 15px 30px;
-        font-size: 25px;
+        font-size: 22px;
         background-image: url('../assets/Images/newsletterButton.png');
         background-repeat: repeat;
         background-size: 100%;

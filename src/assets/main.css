@@ -3,6 +3,16 @@
   --mainRed: #ea5647;
   --darkBlue: #014b7d;
   --lightBlue: #cfedff;
+  --gameBlue: #0093fd;
+  --gameRed: #ff4b3f;
+  --green: #5a9a7d;
+  --yellow:#FFFD01;
+  --gray: #3b484d;
+  
+  --h1Size: 35px;
+  --h2Size: 24px;
+  --buttonTextSize: 22px;
+  --paragraphSize: 15px;
 }
 
 body, html {
@@ -13,6 +23,10 @@ body, html {
   overflow-x: hidden;
 }
 
+span {
+  font-size: inherit;
+}
+
 @font-face {
   font-family: PublicPixel;
   src: url('./Fonts/PublicPixel-z84yD.ttf');
@@ -21,8 +35,9 @@ body, html {
 * {
   font-family: PublicPixel, Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 60px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 #app {
@@ -110,6 +125,19 @@ body, html {
   pointer-events: none;
   animation: flicker 1s infinite;
 }
+
+@keyframes flickerLines {
+  0% {
+    background-size: 100% 2px, 3px 100%;
+  }
+  50% {
+    background-size: 100% 4px, 6px 100%;
+  }
+  100% {
+    background-size: 100% 2px, 3px 100%;
+  }
+}
+
 .crt::before {
   content: " ";
   display: block;
@@ -122,7 +150,5 @@ body, html {
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
-}
-.crt {
-  animation: textShadow 1.6s infinite;
+  animation: flickerLines .1s infinite;
 }
