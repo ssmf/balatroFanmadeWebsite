@@ -1,6 +1,7 @@
 <script setup>
     import headerSection from '@/components/Sections/HeaderSection.vue'
     import aboutSection from '@/components/Sections/AboutSection.vue'
+    import trailerSection from '@/components/Sections/TrailerSection.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@
   <div class="mainContainer">
     <headerSection></headerSection>
     <aboutSection></aboutSection>
+    <trailerSection></trailerSection>
   </div>
 </template>
 

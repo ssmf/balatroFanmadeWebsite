@@ -4,6 +4,7 @@
 
 <template>
     <div class="aboutSection">
+        <img class="gif" :src="'src/assets/images/Aces.gif'" alt="A gif of Ace cards">
         <div class="sectionHeader">
             <h1 class="mainHeader">WHAT IS BALATRO?</h1>
             <p class="paragraph" style="font-size: 19px;"><span style="color: var(--mainRed)">Balatro</span> is a <span style="color: var(--yellow)">poker-inspired roguelike deck builder</span>
@@ -23,9 +24,11 @@
                     and Vouchers. Use these versatile instruments to ignite a combo frenzy and turbocharge your poker hands,
                     crafting electrifying, adrenaline-fueled synergies.
                 </p>
+                <img class="gif cardGif" :src="'src/assets/images/Pokers.gif'" alt="A gif of ingame pokers you can use">
             </div>
             <h1 class="X">X</h1>
             <div class="infoCard mechanicsSection">
+                <img class="gif cardGif" :src="'src/assets/images/SpectralPack.gif'" alt="A gif of ingame Spectral booster pack being opened">
                 <h2 class="secHeader">THINK AHEAD, BET AND HOPE</h2>
                 <p class="paragraph">Deftly deploy an array of potent tools: different Decks, Jokers, Tarot cards, Planet cards, Spectral cards,
                     and Vouchers. Use these versatile instruments to ignite a combo frenzy and turbocharge your poker hands,
@@ -37,6 +40,13 @@
 
 <style scoped>
 
+    @media (max-width: 1200px) {
+        .detailsSection {
+            flex-direction: column;
+            
+        }
+    }
+
     .aboutSection {
         width: 70%;
         display: flex;
@@ -46,8 +56,22 @@
         border-radius: 25px;
     }
 
+    .gif {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 0px black;
+        padding: 10px 20px;
+    }
+
+    .cardGif {
+        background-color: rgba(0, 0, 0, 0.0);
+        box-shadow: 0px 0px 0px 0px black;
+        filter: drop-shadow(0px 0px 5px white);
+        width: 150%;
+    }
+
     .sectionHeader {
-        width: 80%;
+        width: max(80%, 500px);
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
         display: flex;
@@ -64,7 +88,6 @@
     .mainHeader {
         font-size: var(--h1Size);
         text-shadow: 7px 7px 2px var(--darkBlue);
-        filter: drop-shadow(0px 0px 5px var(--darkBlue))
     }
 
     .paragraph {
@@ -72,12 +95,12 @@
     }
 
     .detailsSection {
-        height: 600px;
+        width: max(80%, 800px);
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-radius: 25px;
-        gap: 20px;    
+        gap: 20px;
     }
 
     .X {
@@ -89,6 +112,10 @@
         width: max(400px, 30%);
         padding: 20px 30px;
         border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .cardsSection {
