@@ -6,6 +6,8 @@
     <div class="aboutSection">
         <img class="gif" :src="'src/assets/images/Aces.gif'" alt="A gif of Ace cards">
         <div class="sectionHeader">
+        <img class="cardImage corner" :src="'src/assets/images/GlassCard.png'">
+        <img class="cardImage otherCorner" :src="'src/assets/images/AbandonedDeck.png'">
             <h1 class="mainHeader">WHAT IS BALATRO?</h1>
             <p class="paragraph" style="font-size: 19px;"><span style="color: var(--mainRed)">Balatro</span> is a <span style="color: var(--yellow)">poker-inspired roguelike deck builder</span>
                 all about creating powerful synergies and winning big.</p>
@@ -17,6 +19,8 @@
 
         </div>
         <div class="detailsSection">
+            <img class="cardImage bigCard" :src="'src/assets/images/TarotStar.png'">
+            <img class="cardImage chip" :src="'src/assets/images/Chip.png'">
             <div class="infoCard cardsSection">
                 <h2 class="secHeader">JOKERS, VOUCHERS AND BOOSTER PACKS!</h2>
                 <p class="paragraph">
@@ -45,6 +49,20 @@
             flex-direction: column;
             
         }
+
+        img.bigCard {
+            top: 6%;
+            left: 65%;
+            rotate: 20deg;
+            width: 45%;
+        }
+
+        img.chip {
+            left: -10%;
+            top: 64%;
+            width: 45%;
+            rotate: -20deg;
+        }
     }
 
     .aboutSection {
@@ -54,6 +72,43 @@
         align-items: center;
         gap: 30px;
         border-radius: 25px;
+    }
+
+    .cardImage {
+        position: absolute;
+        width: 110px;
+        image-rendering: pixelated;
+    }
+
+    .bigCard {
+        width: 40%;
+        left: -35%;
+        rotate: -20deg;
+        z-index: -1;
+        filter: opacity(.6) blur(2px) drop-shadow(0px 0px 50px var(--cardYellow));
+    }
+
+    .chip {
+        z-index: -1;
+        width: 40%;
+        left: 98%;
+        rotate: 20deg;
+        filter: opacity(.8) blur(2px) drop-shadow(0px 0px 50px var(--green));
+    }
+
+    .corner {
+        top:  -50px;
+        left: -40px;
+        rotate: 20deg;
+        filter: opacity(.7) blur(.4px) drop-shadow(0px 0px 5px white);
+    }
+
+    .otherCorner {
+        filter: drop-shadow(0px 0px 5px var(--gameRed));
+        z-index: -1;
+        top:  75%;
+        left: 95%;
+        rotate: -30deg;
     }
 
     .gif {
@@ -71,6 +126,7 @@
     }
 
     .sectionHeader {
+        position: relative;
         width: max(80%, 500px);
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
@@ -95,6 +151,7 @@
     }
 
     .detailsSection {
+        position: relative;
         width: max(80%, 800px);
         display: flex;
         justify-content: space-between;
