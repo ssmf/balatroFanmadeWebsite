@@ -10,7 +10,7 @@
     });
 
     const ifImage = defineModel('ifImage');
-    const imagePath = 'src/assets/images/' + props.buttonContent;
+    const imagePath = '/Images/' + props.buttonContent;
 
     const GoTo = () => {
         if (props.destination[0] == "#") {
@@ -41,7 +41,7 @@
         top: 0px;
         padding: 15px 30px;
         font-size: var(--buttonTextSize);
-        background-image: url('../assets/Images/newsletterButton.png');
+        background-image: url('/Images/newsletterButton.png');
         background-repeat: repeat;
         background-size: 100%;
         border-radius: 15px;

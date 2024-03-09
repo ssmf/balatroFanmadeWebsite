@@ -5,7 +5,7 @@
 
 <template>
   <div class="headerSection">
-    <img :src="'src/assets/images/mainLogo.png'" class="mainLogo">
+    <img :src="'/Images/mainLogo.png'" class="mainLogo">
     <h1 class="availableHeader">AVAILABLE NOW!</h1>
     <div class="buttonWrapper">
         <MainButton :destination="'#NewsletterSection'" :ifImage="false" buttonContent="NEWSLETTER" />
@@ -13,10 +13,10 @@
         <MainButton :destination="'#TrailerSection'" :ifImage="false" buttonContent="TRAILER"/>
     </div>
     <div class="StoresWrapper">
-        <a href="https://www.nintendo.com/us/store/products/balatro-switch/" target="_blank" class="storeLink"><img :src="'src/assets/images/NintendoLogo.png'" class="storeLogo"></a>
-        <a href="https://store.playstation.com/en-pl/concept/10010334/" target="_blank" class="storeLink"><img :src="'src/assets/images/PlaystationLogo.png'" class="storeLogo"></a>
-        <a href="https://www.xbox.com/en-CA/games/store/balatro/9pk087lngjc5" target="_blank" class="storeLink"><img :src="'src/assets/images/XboxLogo.png'" class="storeLogo"></a>
-        <a href="https://store.steampowered.com/app/2379780/Balatro/?utm_source=website" target="_blank" class="storeLink"><img :src="'src/assets/images/SteamLogo.png'" class="storeLogo"></a>
+        <a href="https://www.nintendo.com/us/store/products/balatro-switch/" target="_blank" class="storeLink"><img :src="'/Images/NintendoLogo.png'" class="storeLogo"></a>
+        <a href="https://store.playstation.com/en-pl/concept/10010334/" target="_blank" class="storeLink"><img :src="'/Images/PlaystationLogo.png'" class="storeLogo"></a>
+        <a href="https://www.xbox.com/en-CA/games/store/balatro/9pk087lngjc5" target="_blank" class="storeLink"><img :src="'/Images/XboxLogo.png'" class="storeLogo"></a>
+        <a href="https://store.steampowered.com/app/2379780/Balatro/?utm_source=website" target="_blank" class="storeLink"><img :src="'/Images/SteamLogo.png'" class="storeLogo"></a>
     </div>
     <div class="othersWrapper">
         <MainButton :destination="'https://twitter.com/LocalThunk'" :ifImage="true" buttonContent='LocalThunkLogo.png'/>
@@ -24,7 +24,7 @@
         <MainButton :destination="'https://playstack.com/'" :ifImage="true" buttonContent="PlaystackLogo.png"/>
         <MainButton :destination="'https://www.dropbox.com/scl/fo/lg163t04ifnwekgrqra6y/h?rlkey=0mt8hxmk5avygd8b2ky5ouwww&dl=0'" :ifImage="false" buttonContent="Press Pack!" style="position: relative;"/>
     </div>
-    <img class="gif" :src="'src/assets/images/Aces.gif'" alt="A gif of Ace cards">
+    <img class="gif" :src="'/Images/Aces.gif'" alt="A gif of Ace cards">
   </div>
 </template>
 

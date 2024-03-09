@@ -16,13 +16,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("@/assets/Images/TrailerBackground.png");
+        background-image: url("/Images/TrailerBackground.png");
         background-size: cover;
         background-position: 50%;
     }
 
     .TrailerVideo {
-        box-shadow: 0px 0px 20px 0px white;
+        box-shadow: 0px 0px 20px 0px var(--gray);
         border-radius: 25px;
     }
     

@@ -27,7 +27,7 @@
     }
 
     .backgroundImage {
-        background-image: url("@/assets/Images/mainBackground.jpeg");
+        background-image: url("/Images/mainBackground.jpeg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

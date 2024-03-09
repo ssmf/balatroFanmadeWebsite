@@ -37,7 +37,7 @@
         align-items: center;
         gap: 20px;
         background-color: black;
-        background-image: url('@/assets/Images/NewsletterBackground.gif');
+        background-image: url('/Images/NewsletterBackground.gif');
         background-size: cover;
         background-blend-mode: lighten;
         background-position: 100%;
