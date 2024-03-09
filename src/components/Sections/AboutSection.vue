@@ -85,7 +85,7 @@
         left: -35%;
         rotate: -20deg;
         z-index: -1;
-        filter: opacity(.6) blur(2px) drop-shadow(0px 0px 50px var(--cardYellow));
+        filter: opacity(.6) blur(1px) drop-shadow(0px 0px 50px var(--cardYellow));
     }
 
     .chip {
@@ -93,7 +93,7 @@
         width: 40%;
         left: 98%;
         rotate: 20deg;
-        filter: opacity(.8) blur(2px) drop-shadow(0px 0px 50px var(--green));
+        filter: opacity(.8) blur(1px) drop-shadow(0px 0px 40px var(--green));
     }
 
     .corner {

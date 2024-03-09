@@ -16,10 +16,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("@/assets/Images/TrailerBackground.jpeg");
+        background-image: url("@/assets/Images/TrailerBackground.png");
         background-size: cover;
         background-position: 50%;
-        background-blend-mode: luminosity;
     }
 
     .TrailerVideo {
