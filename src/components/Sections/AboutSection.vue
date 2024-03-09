@@ -3,13 +3,12 @@
 </script>
 
 <template>
-    <div class="aboutSection">
-        <img class="gif" :src="'src/assets/images/Aces.gif'" alt="A gif of Ace cards">
+    <div id="AboutSection" class="aboutSection">
         <div class="sectionHeader">
         <img class="cardImage corner" :src="'src/assets/images/GlassCard.png'">
         <img class="cardImage otherCorner" :src="'src/assets/images/AbandonedDeck.png'">
             <h1 class="mainHeader">WHAT IS BALATRO?</h1>
-            <p class="paragraph" style="font-size: 19px;"><span style="color: var(--mainRed)">Balatro</span> is a <span style="color: var(--yellow)">poker-inspired roguelike deck builder</span>
+            <p class="paragraph" style="font-size: var(--headerParagraphSize);"><span style="color: var(--mainRed)">Balatro</span> is a <span style="color: var(--yellow)">poker-inspired roguelike deck builder</span>
                 all about creating powerful synergies and winning big.</p>
 
             <p class="paragraph">Combine valid poker hands with unique Joker cards in order to create varied synergies
@@ -66,6 +65,7 @@
     }
 
     .aboutSection {
+        padding: 100px 0px;
         width: 70%;
         display: flex;
         flex-direction: column;

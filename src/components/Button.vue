@@ -5,22 +5,29 @@
         hoverColor: {
             type: String,
             default: '140deg'
-        }
+        },
+        destination: String
     });
 
     const ifImage = defineModel('ifImage');
     const imagePath = 'src/assets/images/' + props.buttonContent;
 
-    console.log(props.hoverColor)
+    const GoTo = () => {
+        if (props.destination[0] == "#") {
+            window.location.href = props.destination;
+        } else {
+         window.open(props.destination, "_blank");   
+        }
+    }
 </script>
 
 <template>
 
-<div v-if="!ifImage" class="mainButton">
+<div v-if="!ifImage" class="mainButton" @click="GoTo()">
     {{ buttonContent }}
 </div>
 
-<div v-else class="mainButton">
+<div v-else class="mainButton" @click="GoTo()">
     <img class="buttonImage" :src="imagePath">
 </div>
 
@@ -33,7 +40,7 @@
         position: inherit;
         top: 0px;
         padding: 15px 30px;
-        font-size: 22px;
+        font-size: var(--buttonTextSize);
         background-image: url('../assets/Images/newsletterButton.png');
         background-repeat: repeat;
         background-size: 100%;

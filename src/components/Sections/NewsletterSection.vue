@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="NewsletterSection">
+    <div id="NewsletterSection" class="NewsletterSection">
         <h2 class="sectionHeader">Sign up for Updates and news about Balatro!</h2>
         <div class="InputContainer">
             <input size="15" placeholder="NAME" class="Input nameInput" type="text" name="name" required minlength="2">
@@ -30,7 +30,6 @@
 
     .NewsletterSection {
         position: relative;
-        margin-top: -100px;
         width: 100%;
         padding: 200px 40px;
         display: flex;
@@ -48,6 +47,7 @@
         font-size: var(--h2Size);
         z-index: 2;
         filter: drop-shadow(0px 0px 5px white);
+        width: 80%;
     }
 
     .InputContainer {
@@ -56,10 +56,11 @@
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
+        width: 90%;
     }
 
     .Input {
-        font-size: 18px;
+        font-size: var(--headerParagraphSize);
         padding: 15px 10px;
         background-color: var(--mainBlue);
         box-shadow: 0px 0px 4px 0px var(--mainBlue);
@@ -88,27 +89,15 @@
     .SubscribeButton {
         position: relative;
         padding: 20px;
-        background-image: url('@/assets/Images/newsletterButton.png');
+        background-color: var(--green);
         box-shadow: 0px 0px 5px 0px var(--green);
         border-bottom: 5px solid var(--darkGreen);
     }
 
-    .SubscribeButton::after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: var(--green);
-        border-radius: 10px;
-        mix-blend-mode: color;
-    }
-
     .SubscribeButton:hover {
         cursor: pointer;
-        box-shadow: 0px 0px 15px 3px var(--green);
-        background-position-y: 100%;
+        box-shadow: 0px 0px 15px 3px var(--saturatedGreen);
+        background-color: var(--saturatedGreen);
     }
 
     .SubscribeButton:focus {
@@ -117,9 +106,9 @@
 
     .NewslettersNote {
         z-index: 2;
-        font-size: 13px;
+        font-size: var(--LinkSize);
         width: max(400px, 50%);
-        text-shadow: 2px 2px 0px lightBlue;
+        text-shadow: 1px 1px 0px lightBlue;
         color: var(--lightBlue);
     }
 

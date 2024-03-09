@@ -8,9 +8,9 @@
     <img :src="'src/assets/images/mainLogo.png'" class="mainLogo">
     <h1 class="availableHeader">AVAILABLE NOW!</h1>
     <div class="buttonWrapper">
-        <MainButton :ifImage="false" buttonContent="NEWSLETTER"/>
-        <MainButton :ifImage="false" buttonContent="WHAT IS BALATRO"/>
-        <MainButton :ifImage="false" buttonContent="TRAILER"/>
+        <MainButton :destination="'#NewsletterSection'" :ifImage="false" buttonContent="NEWSLETTER" />
+       <MainButton :destination="'#AboutSection'" :ifImage="false" buttonContent="WHAT IS BALATRO"/>
+        <MainButton :destination="'#TrailerSection'" :ifImage="false" buttonContent="TRAILER"/>
     </div>
     <div class="StoresWrapper">
         <a href="https://www.nintendo.com/us/store/products/balatro-switch/" target="_blank" class="storeLink"><img :src="'src/assets/images/NintendoLogo.png'" class="storeLogo"></a>
@@ -19,11 +19,12 @@
         <a href="https://store.steampowered.com/app/2379780/Balatro/?utm_source=website" target="_blank" class="storeLink"><img :src="'src/assets/images/SteamLogo.png'" class="storeLogo"></a>
     </div>
     <div class="othersWrapper">
-        <MainButton :ifImage="true" buttonContent='LocalThunkLogo.png'/>
-        <MainButton :ifImage="true" hoverColor="25deg" buttonContent='DiscordLogo.svg'/>
-        <MainButton :ifImage="true" buttonContent="PlaystackLogo.png"/>
-        <MainButton :ifImage="false" buttonContent="Press Pack!" style="position: relative;"/>
+        <MainButton :destination="'https://twitter.com/LocalThunk'" :ifImage="true" buttonContent='LocalThunkLogo.png'/>
+        <MainButton :destination="'https://discord.com/invite/5mH3dNhjx2'" :ifImage="true" hoverColor="25deg" buttonContent='DiscordLogo.svg'/>
+        <MainButton :destination="'https://playstack.com/'" :ifImage="true" buttonContent="PlaystackLogo.png"/>
+        <MainButton :destination="'https://www.dropbox.com/scl/fo/lg163t04ifnwekgrqra6y/h?rlkey=0mt8hxmk5avygd8b2ky5ouwww&dl=0'" :ifImage="false" buttonContent="Press Pack!" style="position: relative;"/>
     </div>
+    <img class="gif" :src="'src/assets/images/Aces.gif'" alt="A gif of Ace cards">
   </div>
 </template>
 
@@ -107,6 +108,13 @@
         gap: 20px;
         flex-wrap: wrap;
         width: 400px;
+    }
+
+    .gif {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 25px;
+      box-shadow: 0px 0px 10px 0px black;
+      padding: 10px 20px;
     }
 
 </style>
