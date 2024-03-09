@@ -2,7 +2,8 @@
     import headerSection from '@/components/Sections/HeaderSection.vue'
     import aboutSection from '@/components/Sections/AboutSection.vue'
     import trailerSection from '@/components/Sections/TrailerSection.vue'
-    import NewsletterSection from './components/Sections/NewsletterSection.vue';
+    import NewsletterSection from '@/components/Sections/NewsletterSection.vue';
+    import Footer from '@/components/Sections/Footer.vue';
 </script>
 
 <template>
@@ -13,6 +14,7 @@
     <aboutSection></aboutSection>
     <trailerSection></trailerSection>
     <NewsletterSection></NewsletterSection>
+    <Footer></Footer>
   </div>
 </template>
 
