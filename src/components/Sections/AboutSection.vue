@@ -5,8 +5,8 @@
 <template>
     <div id="AboutSection" class="aboutSection">
         <div class="sectionHeader">
-        <img class="cardImage corner" :src="'/Images/GlassCard.png'">
-        <img class="cardImage otherCorner" :src="'/Images/AbandonedDeck.png'">
+        <img class="cardImage corner" src="/Images/GlassCard.png">
+        <img class="cardImage otherCorner" src="/Images/AbandonedDeck.png">
             <h1 class="mainHeader">WHAT IS BALATRO?</h1>
             <p class="paragraph" style="font-size: var(--headerParagraphSize);"><span style="color: var(--mainRed)">Balatro</span> is a <span style="color: var(--yellow)">poker-inspired roguelike deck builder</span>
                 all about creating powerful synergies and winning big.</p>
@@ -18,8 +18,8 @@
 
         </div>
         <div class="detailsSection">
-            <img class="cardImage bigCard" :src="'/Images/TarotStar.png'">
-            <img class="cardImage chip" :src="'/Images/Chip.png'">
+            <img class="cardImage bigCard" src="/Images/TarotStar.png">
+            <img class="cardImage chip" src="/Images/Chip.png">
             <div class="infoCard cardsSection">
                 <h2 class="secHeader">JOKERS, VOUCHERS AND BOOSTER PACKS!</h2>
                 <p class="paragraph">
@@ -27,11 +27,11 @@
                     and Vouchers. Use these versatile instruments to ignite a combo frenzy and turbocharge your poker hands,
                     crafting electrifying, adrenaline-fueled synergies.
                 </p>
-                <img class="gif cardGif" :src="'/Images/Pokers.gif'" alt="A gif of ingame pokers you can use">
+                <img class="gif cardGif" src="/Images/Pokers.gif" alt="A gif of ingame pokers you can use">
             </div>
             <h1 class="X">X</h1>
             <div class="infoCard mechanicsSection">
-                <img class="gif cardGif" :src="'/Images/SpectralPack.gif'" alt="A gif of ingame Spectral booster pack being opened">
+                <img class="gif cardGif" src="/Images/SpectralPack.gif" alt="A gif of ingame Spectral booster pack being opened">
                 <h2 class="secHeader">THINK AHEAD, BET AND HOPE</h2>
                 <p class="paragraph">Deftly deploy an array of potent tools: different Decks, Jokers, Tarot cards, Planet cards, Spectral cards,
                     and Vouchers. Use these versatile instruments to ignite a combo frenzy and turbocharge your poker hands,

@@ -1,5 +1,6 @@
 <script setup>
-    
+    import { computed } from 'vue';
+
     const props = defineProps({
         buttonContent: String,
         hoverColor: {
@@ -10,7 +11,8 @@
     });
 
     const ifImage = defineModel('ifImage');
-    const imagePath = '/Images/' + props.buttonContent;
+    const imagePath = new URL ('/balatroFanmadeWebsite/Images/' + props.buttonContent, import.meta.url).href; 
+    console.log(imagePath);
 
     const GoTo = () => {
         if (props.destination[0] == "#") {
