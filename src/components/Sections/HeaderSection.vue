@@ -39,12 +39,14 @@
 
     .mainLogo {
         width: 40%;
-        min-width: 400px;
+        min-width: 300px;
         margin-top: 30px;
         transition: all .15s ease-in-out;
     }
 
     .availableHeader {
+        padding: 0px 5px;
+        word-break: break-word;
         margin: 0px;
         margin-top: -20px;
         color: var(--mainRed);
@@ -59,6 +61,7 @@
     }
 
     .buttonWrapper {
+        width: max(80%, 400px);
         position: relative;
         margin-top: 10px;
         display: flex;
@@ -110,6 +113,7 @@
     }
 
     .gif {
+      width: max(50%, 350px);
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: 25px;
       box-shadow: 0px 0px 10px 0px black;

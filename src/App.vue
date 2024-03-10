@@ -31,7 +31,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         position: fixed;
         z-index: -1;
@@ -40,7 +40,7 @@
     .crtFlickerOverlay {
         pointer-events: none;
         position: fixed;
-        width: 110%;
+        width: 100vw;
         height: 100%;
         z-index: 5;
     }

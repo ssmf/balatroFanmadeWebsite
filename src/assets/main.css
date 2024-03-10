@@ -21,17 +21,31 @@
   --paragraphSize: 15px;
   --LinkSize: 12px;
   --SmallNoteSize: 10px;
+  --imageButtonSize: 50px;
 }
 
 @media screen and (max-width: 1000px) {
   :root {
-    --h1Size: 30px;
+    --h1Size: 28px;
     --h2Size: 22px;
     --buttonTextSize: 20px;
     --headerParagraphSize: 17px;
     --paragraphSize: 13px;
-    --LinkSize: 12px;
+    --LinkSize: 11px;
     --SmallNoteSize: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --h1Size: 25px;
+    --h2Size: 15px;
+    --buttonTextSize: 16px;
+    --headerParagraphSize: 13px;
+    --paragraphSize: 8px;
+    --LinkSize: 10px;
+    --SmallNoteSize: 10px;
+    --imageButtonSize: 40px;
   }
 }
 
@@ -39,9 +53,8 @@ body, html {
   padding: 0;
   margin: 0;
   height: 100%;
-  width: auto;
-  overflow-x: hidden;
   scroll-behavior: smooth; 
+  overflow-x: hidden;
 }
 
 span {
@@ -62,8 +75,8 @@ span {
 }
 
 #app {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes flicker {

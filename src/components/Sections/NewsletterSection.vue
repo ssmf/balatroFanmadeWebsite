@@ -30,8 +30,8 @@
 
     .NewsletterSection {
         position: relative;
+        padding: 200px 0px;
         width: 100%;
-        padding: 200px 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -107,7 +107,7 @@
     .NewslettersNote {
         z-index: 2;
         font-size: var(--LinkSize);
-        width: max(400px, 50%);
+        width: min(800px, 90%);
         text-shadow: 1px 1px 0px lightBlue;
         color: var(--lightBlue);
     }

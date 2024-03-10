@@ -18,9 +18,8 @@
 
         </div>
         <div class="detailsSection">
-            <img class="cardImage bigCard" src="/Images/TarotStar.png">
-            <img class="cardImage chip" src="/Images/Chip.png">
             <div class="infoCard cardsSection">
+                <img class="cardImage bigCard" src="/Images/TarotStar.png">
                 <h2 class="secHeader">JOKERS, VOUCHERS AND BOOSTER PACKS!</h2>
                 <p class="paragraph">
                     Deftly deploy an array of potent tools: different Decks, Jokers, Tarot cards, Planet cards, Spectral cards,
@@ -31,6 +30,7 @@
             </div>
             <h1 class="X">X</h1>
             <div class="infoCard mechanicsSection">
+                <img class="cardImage chip" src="/Images/Chip.png">
                 <img class="gif cardGif" src="/Images/SpectralPack.gif" alt="A gif of ingame Spectral booster pack being opened">
                 <h2 class="secHeader">THINK AHEAD, BET AND HOPE</h2>
                 <p class="paragraph">Deftly deploy an array of potent tools: different Decks, Jokers, Tarot cards, Planet cards, Spectral cards,
@@ -50,23 +50,56 @@
         }
 
         img.bigCard {
-            top: 6%;
-            left: 65%;
+            top: 8%;
+            left: 95%;
             rotate: 20deg;
-            width: 45%;
+            width: 85%;
         }
 
         img.chip {
-            left: -10%;
-            top: 64%;
-            width: 45%;
+            left: -80%;
+            top: 10%;
+            width: 85%;
             rotate: -20deg;
+        }
+
+        .infoCard {
+            width: max(320px, 60%)
+        }
+    }
+
+    @media (max-width: 500px) {
+        body, html {
+            overflow: auto !important;
+        }
+        div > img.bigCard {
+            top: 10%;
+            left: 80%;
+            rotate: 20deg;
+            width: max(200px,90%);
+        }
+
+        div > img.chip {
+            left: -80%;
+            top: 10%;
+            width: max(200px,90%);
+            rotate: -20deg;
+        }
+
+        div > .infoCard {
+            width: max(50%, 150px);
+            padding: 18px 22px;
+            gap: 12px;
+        }
+
+        div > .detailsSection {
+            width: max(100%, 200px);
         }
     }
 
     .aboutSection {
         padding: 100px 0px;
-        width: 70%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,11 +111,12 @@
         position: absolute;
         width: 110px;
         image-rendering: pixelated;
+        
     }
 
     .bigCard {
-        width: 40%;
-        left: -35%;
+        width: max(75%, 350px);
+        left: -65%;
         rotate: -20deg;
         z-index: -1;
         filter: opacity(.6) blur(1px) drop-shadow(0px 0px 50px var(--cardYellow));
@@ -90,8 +124,9 @@
 
     .chip {
         z-index: -1;
-        width: 40%;
-        left: 98%;
+        width: 75%;
+        left: 92%;
+        top: 12%;
         rotate: 20deg;
         filter: opacity(.8) blur(1px) drop-shadow(0px 0px 40px var(--green));
     }
@@ -127,7 +162,7 @@
 
     .sectionHeader {
         position: relative;
-        width: max(80%, 500px);
+        width: max(80%, 300px);
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
         display: flex;
@@ -151,8 +186,7 @@
     }
 
     .detailsSection {
-        position: relative;
-        width: max(80%, 800px);
+        width: max(70%, 500px);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -165,8 +199,9 @@
     }
 
     .infoCard {
+        height: fit-content;
+        position: relative;
         border: 2px solid black;
-        width: max(400px, 30%);
         padding: 20px 30px;
         border-radius: 40px;
         display: flex;

@@ -69,6 +69,6 @@
     }
 
     .buttonImage {
-        width: 50px;
+        width: var(--imageButtonSize);
     }
 </style>
