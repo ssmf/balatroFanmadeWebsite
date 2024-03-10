@@ -16,7 +16,7 @@
 
     const GoTo = () => {
         if (props.destination[0] == "#") {
-            window.location.href = props.destination;
+            document.querySelector(props.destination).scrollIntoView({ behavior: 'smooth', block: 'start' })
         } else {
          window.open(props.destination, "_blank");   
         }
