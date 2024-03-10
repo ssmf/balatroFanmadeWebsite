@@ -33,7 +33,7 @@
                 <img class="cardImage chip" src="/Images/Chip.png">
                 <img class="gif cardGif" src="/Images/SpectralPack.gif" alt="A gif of ingame Spectral booster pack being opened">
                 <h2 class="secHeader">THINK AHEAD, BET AND HOPE</h2>
-                <p class="paragraph">Carefully choose the jokers you are buing, how you are spending your money and whether
+                <p class="paragraph">Carefully choose the jokers you are buying, how you are spending your money and whether
                     should you risk discarding your cards! Make use of the in-depth stats screen to study your best hands, 
                     most used Jokers, and more!
                 </p>
