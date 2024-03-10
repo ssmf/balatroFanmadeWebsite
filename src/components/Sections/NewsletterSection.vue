@@ -41,7 +41,7 @@
         background-image: url('/Images/NewsletterBackground.gif');
         background-size: cover;
         background-blend-mode: lighten;
-        background-position: 100%;
+        background-position: center;
     }
 
     .sectionHeader {
