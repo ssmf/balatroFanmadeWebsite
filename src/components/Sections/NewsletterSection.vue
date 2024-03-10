@@ -6,6 +6,7 @@
     <div id="NewsletterSection" class="NewsletterSection">
         <h2 class="sectionHeader">Sign up for Updates and news about Balatro!</h2>
         <div class="InputContainer">
+            <div class="UnavailableBox">CURRENTLY UNAVAILABLE!</div>
             <input size="15" placeholder="NAME" class="Input nameInput" type="text" name="name" required minlength="2">
             <input size="20" placeholder="E-MAIL" class="Input EmailInput" type="email" name="email" required>
             <button class="Input SubscribeButton">✓</button>
@@ -51,12 +52,29 @@
     }
 
     .InputContainer {
+        position: relative;
         z-index: 2;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
+        align-items: center;
         width: 90%;
+    }
+
+    .UnavailableBox {
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: .8;
+        filter: drop-shadow(0px 0px 10px white);
+        text-shadow: 0px 0px 4px white;
     }
 
     .Input {

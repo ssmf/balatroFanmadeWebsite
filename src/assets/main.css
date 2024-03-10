@@ -22,6 +22,7 @@
   --LinkSize: 12px;
   --SmallNoteSize: 10px;
   --imageButtonSize: 50px;
+  --AnimationTime: 1.5s;
 }
 
 @media screen and (max-width: 1000px) {

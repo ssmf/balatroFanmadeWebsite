@@ -97,6 +97,22 @@
         }
     }
 
+    .corner {
+        top:  -50px;
+        left: -40px;
+        rotate: 20deg;
+        filter: opacity(.7) blur(.4px) drop-shadow(0px 0px 5px white);
+    }
+
+    .otherCorner {
+        filter: drop-shadow(0px 0px 5px var(--gameRed));
+        z-index: -1;
+        top:  75%;
+        left: 95%;
+        rotate: -30deg;
+    }
+    
+
     .aboutSection {
         padding: 100px 0px;
         width: 90%;
@@ -105,6 +121,7 @@
         align-items: center;
         gap: 30px;
         border-radius: 25px;
+        z-index: 2;
     }
 
     .cardImage {
@@ -131,26 +148,12 @@
         filter: opacity(.8) blur(1px) drop-shadow(0px 0px 40px var(--green));
     }
 
-    .corner {
-        top:  -50px;
-        left: -40px;
-        rotate: 20deg;
-        filter: opacity(.7) blur(.4px) drop-shadow(0px 0px 5px white);
-    }
-
-    .otherCorner {
-        filter: drop-shadow(0px 0px 5px var(--gameRed));
-        z-index: -1;
-        top:  75%;
-        left: 95%;
-        rotate: -30deg;
-    }
-
     .gif {
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
         box-shadow: 0px 0px 10px 0px black;
         padding: 10px 20px;
+        z-index: 3;
     }
 
     .cardGif {
